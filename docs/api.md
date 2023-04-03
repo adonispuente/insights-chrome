@@ -1,6 +1,6 @@
 # Javascript API
 
-Chrome comes with a Javacript API that allows applications to control navigation, global filters, etc.
+Chrome comes with a JavaScript API that allows applications to control navigation, global filters, etc.
 
 ```js
     // initialize chrome
@@ -34,10 +34,6 @@ chrome: {
     init,
     updateDocumentTitle
 },
-loadInventory,
-experimental: {
-    loadRemediations,
-}
 ```
 
 ## Update document title
@@ -51,10 +47,9 @@ insights.chrome.identifyApp('advisor', 'App title');
 ```
 
 ### Using updateDocumentTitle function
-Can be used for changing app title in different app pages.
+Can be used for changing app title in different app pages with a ` | console.redhat.com` suffix added automatically if not disabled by a second param.
 ```js
-insights.chrome.updateDocumentTitle('New title')
-
+insights.chrome.updateDocumentTitle('New title without suffix', true)
 ```
 
 ## Global events
